@@ -1,0 +1,37 @@
+/* Background container with blur effect */
+.login-container {
+    width: 100%;
+    height: 100vh;
+    background-image: url("backgroundLoan.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 80px;
+  }
+  
+  /* Overlay to create blur effect */
+  .login-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(10px); /* Blur effect */
+    z-index: 0;
+   
+  }
+  
+  /* Ensures the login box is above the blurred background */
+  .login-card {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+   margin-top: 50px;
+  }
+  

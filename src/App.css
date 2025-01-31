@@ -1,0 +1,77 @@
+/* General page styling */
+.page-container {
+  position: relative;
+  min-height: 100vh; /* Ensure the container spans the full viewport height */
+  width: 100%;
+  overflow-y: auto; /* Allow scrolling for overflowing content */
+  padding-bottom: 2rem; /* Add padding at the bottom for better spacing */
+}
+
+/* Background styling */
+.background-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("backgroundLoan.jpg"); /* Replace with correct path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px); /* Apply blur only to the background */
+  z-index: -1; /* Ensure it stays behind the content */
+  pointer-events: none; /* Ensure background doesn't interfere with interactions */
+}
+
+/* Content box styling */
+.aboutus-content {
+  position: relative; /* Independent of the background blur */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay for better readability */
+  color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto; /* Center align and add margins */
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional adjustments to ensure proper visibility */
+.aboutus-content h3 {
+  margin-bottom: 1rem;
+  color: #ffcc00; /* Gold color for subheadings */
+}
+
+.aboutus-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0; /* Slightly lighter gray for text */
+}
+
+.aboutus-content ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+.aboutus-content li {
+  margin-bottom: 0.5rem;
+  color: #e0e0e0; /* Light gray for list items */
+}
+
+/* Fixing bottom visibility issue */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+html {
+  scroll-behavior: smooth; /* Add smooth scrolling for better UX */
+}
+
+/* Adjust the page content to avoid overlapping with the fixed header */
+.page-content {
+  margin-top: 100px; /* Adjust this value based on your navbar height */
+  padding: 20px;
+}
+

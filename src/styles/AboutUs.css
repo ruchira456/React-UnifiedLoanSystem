@@ -1,0 +1,83 @@
+/* General styling for the page container */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(
+      rgba(98, 77, 77, 0.7),
+      rgba(119, 100, 100, 0.7)
+    ),
+    url("/backgroundLoan.jpg") no-repeat center center/cover;
+  padding: 2rem;
+}
+
+/* Content box styling */
+.aboutus-content {
+  background-color: rgba(208, 189, 189, 0.9);
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(187, 177, 177, 0.3);
+  color: #ddafaf;
+  overflow: hidden;
+}
+
+/* Headings */
+.aboutus-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #ff5722; /* Highlighted accent color */
+}
+
+h3 {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #ff784e; /* Secondary accent color */
+}
+
+/* Paragraph and text styling */
+p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #f2cccc;
+  margin-bottom: 1.5rem;
+}
+
+/* List styling */
+ul {
+  list-style: disc;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-content {
+    padding: 1.5rem;
+  }
+
+  .aboutus-heading {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p,
+  li {
+    font-size: 1rem;
+  }
+}

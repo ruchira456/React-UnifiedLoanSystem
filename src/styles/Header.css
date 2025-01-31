@@ -1,0 +1,128 @@
+/* Custom header styling */
+.custom-navbar {
+ position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-image:  url('backgroundLoan.jpg');
+  background: rgba(61, 50, 50, 0.8); /* Semi-transparent background */
+  /* padding: 10px 20px; */
+}
+
+
+/* Logo styling */
+.navbar-brand img {
+  border-radius: 8px;
+}
+
+/* Navigation button styling */
+.nav-btn {
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.2);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .search-bar {
+      max-width: 300px;
+  }
+
+  .nav-btn {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.8rem;
+  }
+}
+
+/* Search bar styling */
+.search-bar {
+  display: flex;
+  max-width: 500px;
+  flex-grow: 1;
+  gap: 0.5rem;
+}
+
+/* Search bar input */
+.search-bar .form-control {
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 0.5rem;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Glowing effect on hover and focus */
+.search-bar .form-control:hover,
+.search-bar .form-control:focus {
+  border-color: #ff5722;
+  box-shadow: 0 0 15px rgba(255, 87, 34, 0.7);
+  outline: none; /* Remove the default blue outline */
+}
+
+/* Search button */
+.search-bar .search-btn {
+  background-color: #ff5722;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button hover effect */
+.search-bar .search-btn:hover {
+  background-color: #ff784e;
+  transform: scale(1.1);
+}
+
+/* Styling the search icon inside the button */
+.search-bar .search-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+
+/* Glowing Effect for "Our Loan Services" */
+.loan-heading {
+  font-size: 2.8rem; /* Larger text */
+  font-weight: bold; /* Bold text */
+  color: #1b1818; /* Dark Blue Text */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  text-align: center; /* Center alignment */
+  letter-spacing: 3px; /* Spacing between letters */
+  animation: glow 1.5s infinite alternate; /* Apply animation */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* Outer Glow Effect using Keyframes */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px #1f25dc, 0 0 10px #ff00ff, 0 0 15px #b6c663, 0 0 20px rgba(255, 0, 255, 0.8);
+  }
+  100% {
+    text-shadow: 0 0 10px #7e637e, 0 0 20px #ff00ff, 0 0 30px #c2d47a, 0 0 40px rgba(255, 0, 255, 0.9);
+  }
+}
+
+/* Styling for the description */
+.loan-description {
+  font-size: 1.2rem; /* Slightly larger text */
+  color: #ebf4f5; /* Dark gray color */
+  font-style: italic; /* Italicize for emphasis */
+  background: linear-gradient(to right, #094886, #8e4624); /* Light gradient background */
+  padding: 10px 15px; /* Padding around text */
+  border-left: 5px solid #007bff; /* Add a left border */
+  display: inline-block; /* Make the border wrap content */
+  border-radius: 8px; /* Smooth corners */
+  margin-bottom: 40px;
+}

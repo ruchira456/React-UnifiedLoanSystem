@@ -1,0 +1,67 @@
+/* Ensure the container spans the full height of the viewport and centers its content */
+.homepage-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Optional overlay for background image */
+    position: relative;
+  }
+  
+  /* Overlay for additional styling */
+  .homepage-overlay {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Subtle border */
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6), 0 0 40px rgba(255, 255, 255, 0.4); /* Glow effect */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Text styling */
+  .homepage-overlay h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #3c3131;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    margin-bottom: 1rem;
+  }
+  
+  .homepage-overlay p {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #ffffff, 0 0 10px #ff00ff;
+  }
+  
+  /* Button styling */
+  .homepage-button {
+    padding: 0.75rem 2rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(90deg, #ff00ff, #ff6600);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff6600;
+  }
+  
+  .homepage-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ff00ff, 0 0 40px #ff6600;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
