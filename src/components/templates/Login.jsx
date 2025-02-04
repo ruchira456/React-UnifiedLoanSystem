@@ -14,7 +14,7 @@ function Login() {
         alert("Enquiry service")
      }
      else{
-         axios.get(`http://localhost:9095/employee_details/employee/${auth.username}/${auth.password}`)
+         axios.get(`http://localhost:7088/employee_details/employee/${auth.username}/${auth.password}`)
               .then(res=>{
                  if(res.status===200)
                  {
@@ -65,6 +65,7 @@ function Login() {
 
          <div className="text-center">
            <button className="btn btn-primary w-100">Login</button>
+           <button className="btn btn-warning mt-2 w-100">Register</button>
          </div>
 
        </form>

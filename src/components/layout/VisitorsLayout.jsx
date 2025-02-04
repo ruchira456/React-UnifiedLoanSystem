@@ -8,6 +8,7 @@ import ViewEnquiry from '../pages/enquiry/ViewEnquiry';
 import AddEnquiry from '../pages/enquiry/AddEnquiry';
 
 
+
 function VisitorsLayout() {
   return (
     <div>
@@ -20,6 +21,7 @@ function VisitorsLayout() {
                      <Route path="login" element={<Login />} />
                      <Route path="addenquiry" element={<AddEnquiry />} />
                      <Route path="viewenquiry" element={<ViewEnquiry />} />
+                  
                </Routes>
             </div>
 
