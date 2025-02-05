@@ -8,6 +8,7 @@ import Homepage from "./components/templates/Homepage";
 import OurServices from "./components/templates/OurServices";
 import AddEnquiry from "./components/pages/enquiry/AddEnquiry";
 import ViewEnquiry from "./components/pages/enquiry/ViewEnquiry";
+import AdddEnEnquiry from "./components/pages/enquiry/AdddEnEnquiry";
 
 function App() {
   return (
@@ -20,8 +21,12 @@ function App() {
         <Route path="/visitor/service" element={<OurServices />} />
 
         {/* Enquiry Routes */}
-        <Route path="/visitor/enquiry/add" element={<AddEnquiry />} />
+        <Route path="/visitor/enquiry" element={<AddEnquiry />} />
         <Route path="/visitor/enquiry/view" element={<ViewEnquiry />} />
+       
+        
+
+   
       </Routes>
     </BrowserRouter>
   );

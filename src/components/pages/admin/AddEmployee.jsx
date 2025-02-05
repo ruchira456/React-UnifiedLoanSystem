@@ -32,12 +32,12 @@ function AddEmployee() {
 
 return (
   <div>
-      <div  className='bg bg-warning text-center'>
-           <h1>
-              <i className='bi bi'/>Register Here.....!!!</h1>
+      <div  className=' text-center '>
+           <h1 className=''>
+              <i className='bi pen'/>Register Here.....!!!</h1>
      </div>
-     <div  className='d-flex justify-content-center'>
-      <div  className='w-50 border border-danger mt-2 p-2'>
+     <div  className='d-flex justify-content-center' >
+      <div  className='w-50 border border-dark mt-2 p-2  border border-4 5' >
           <form onSubmit={handleSubmit(saveData)}>
               <div>
                   <label className='form-control-label'>Enter First Name:-</label>
@@ -56,8 +56,8 @@ return (
 
 
               <div>
-                  <label className='form-control-label'>Enter Email :-</label>
-                  <input type='text' className='form-control' {...register('employeeLastName')}></input>
+                  <label className='form-control-label'>Enter Employee Email :-</label>
+                  <input type='text' className='form-control' {...register('employeeEmail')}></input>
               </div>
 
               <div>

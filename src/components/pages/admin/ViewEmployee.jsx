@@ -34,23 +34,20 @@ function ViewEmployee() {
   return (
     <div >
       <h1 className='text-center'>Users Info</h1>
-      <table className='table table-dark'>
+      <table className='table table-dark' style={{fontSize:"10px"}} width="75%">
         <thead>
           <tr>
             <th>id</th>
-            <th>EmployeeFirstName</th>
-            <th>EmployeeMiddleName</th>
-            <th>EmployeeLastName</th>
+            <th>Employee Name</th>
+     
             <th>EmployeeEmail</th>
             <th>employeeSalary</th>
             <th>employeeAge</th>
-            <th>employeeusername</th>
-            <th>employeeAge</th>
+            <th>userType</th>
             <th>employeeImage</th>
             <th>employeePancard</th>
-            <th>userType</th>
-            <th>username</th>
-            <th>password</th>
+           
+           
 
 
           </tr>
@@ -59,21 +56,22 @@ function ViewEmployee() {
           {
             employeeDetails.map((u, index) => <tr key={index}>
               <td>{u.employeeIdentifier}</td>
-              <td>{u.employeeFirstName}</td>
-              <td>{u.employeeMiddleName}</td>
-              <td>{u.employeeLastName}</td>
+              <td>{` ${u.employeeFirstName} 
+              ${u.employeeMiddleName} 
+              ${u.employeeLastName}`}</td>
               <td>{u.employeeEmail}</td>
               <td>{u.employeeSalary}</td>
               <td>{u.employeeAge}</td>
               <td>{u.userType}</td>
-              <td>{u.username}</td>
-              <td>{u.password}</td>
+              
               <td>
                 <img alt="Image not found" src={`data:image/jpeg;base64,${u.employeeImage}`} width={'100px'} />
               </td>
               <td>
                 <img alt="Image not found" src={`data:image/jpeg;base64,${u.employeePancard}`} width={'100px'} />
               </td>
+
+             
          
 
             </tr>)

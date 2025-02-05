@@ -26,6 +26,7 @@ const ViewEnquiry = () => {
         <table className="table table-striped table-bordered mt-4">
           <thead className="table-dark">
             <tr>
+            
               <th>ID</th>
               <th>Full Name</th>
               <th>Contact Number</th>
@@ -33,19 +34,21 @@ const ViewEnquiry = () => {
               <th>Loan Type</th>
               <th>Age</th>
               <th>PAN Card</th>
+              <th>RegisterOn</th>
               <th>Status</th>
             </tr>
           </thead>
           <tbody>
-            {enquiries.map((enquiry) => (
-              <tr key={enquiry.id}>
-                <td>{enquiry.id}</td>
+            {enquiries.map((enquiry,index) => (
+              <tr key={index}>
+                <td>{enquiry.enquiryId}</td>
                 <td>{enquiry.customerFullName}</td>
                 <td>{enquiry.contactNumber}</td>
                 <td>{enquiry.email}</td>
                 <td>{enquiry.loanType}</td>
                 <td>{enquiry.age}</td>
                 <td>{enquiry.panCard}</td>
+                <td>{enquiry.registeredOn}</td>
                 <td>{enquiry.enquiryStatus}</td>
               </tr>
             ))}
