@@ -8,16 +8,20 @@ import Homepage from "./components/templates/Homepage";
 import OurServices from "./components/templates/OurServices";
 import AddEnquiry from "./components/pages/enquiry/AddEnquiry";
 import ViewEnquiry from "./components/pages/enquiry/ViewEnquiry";
+import ViewEmployee from "./components/pages/admin/ViewEmployee";
+import Edit from "./components/pages/admin/Edit";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-         {/* General Routes */}
+        {/* General Routes */}
         <Route path="/" element={<Homepage />} />
         <Route path="/visitor/*" element={<VisitorsLayout />} />
         <Route path="/unified-loan-system/*" element={<UserLayout />} />
+        <Route path="/unified-loan-system/view_employee" element={<ViewEmployee />} />
         <Route path="/visitor/service" element={<OurServices />} />
+        <Route path="/edit-employee/:id" element={<Edit />} />
 
         {/* Enquiry Routes */}
         <Route path="/visitor/enquiry/add" element={<AddEnquiry />} />
