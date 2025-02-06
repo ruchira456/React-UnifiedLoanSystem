@@ -31,7 +31,8 @@ function Header() {
           <Link className="btn btn-warning me-2 nav-btn" to={'/visitor/contact'}>Contact Us</Link>
           <Link className="btn btn-success me-2 nav-btn" to={'/visitor/calculator'}>EMI Calculator</Link>
           <Link className="btn btn-danger me-2 nav-btn" to={'/visitor/enquiry'}>Enquiry</Link> 
-          <Link className="btn btn-primary nav-btn" to={'/visitor/login'}>Login</Link>
+          <Link className="btn btn-primary me-2 nav-btn" to={'/visitor/login'}>Login</Link>
+
         </div>
       </div>
     </nav>

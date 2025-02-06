@@ -10,6 +10,7 @@ import AddEnquiry from "./components/pages/enquiry/AddEnquiry";
 import ViewEnquiry from "./components/pages/enquiry/ViewEnquiry";
 import ViewEmployee from "./components/pages/admin/ViewEmployee";
 import Edit from "./components/pages/admin/Edit";
+import AdddEnEnquiry from "./components/pages/enquiry/AdddEnEnquiry";
 
 function App() {
   return (
@@ -24,8 +25,12 @@ function App() {
         <Route path="/edit-employee/:id" element={<Edit />} />
 
         {/* Enquiry Routes */}
-        <Route path="/visitor/enquiry/add" element={<AddEnquiry />} />
+        <Route path="/visitor/enquiry" element={<AddEnquiry />} />
         <Route path="/visitor/enquiry/view" element={<ViewEnquiry />} />
+
+
+
+
       </Routes>
     </BrowserRouter>
   );

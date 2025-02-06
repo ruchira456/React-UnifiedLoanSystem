@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom'
 //usertype->option
 // ADMIN-> Add Employee,View Employee,App Statastics
 // CRM->  Pending Enquiries , Send Feedback, Apply for Loan,View Pending Loan Application
-const basePath = "/easy-fainance/"
+const basePath = "/unified-loan-system/"
 const options = {
   ADMIN: [
     { label: 'Add Employee', path: basePath + "add_employee" },
-    { label: 'View Employee', path: "view_employee" },
+    { label: 'View Employee', path: basePath + "view_employee" },
     { label: 'App Statastics', path: basePath + "app_info" }
   ],
   CRM: [
@@ -23,7 +23,7 @@ const options = {
 
 function SideNav({ userType }) {
   return (
-    <div className='bg-dark text-white mynav  p-2 ' style={{ height: '800px ' }}>
+    <div className='bg-dark text-white mynav  ' style={{ height: '620px' }}>
 
       {
         userType && options[userType].map((option, index) => (

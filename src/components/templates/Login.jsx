@@ -62,6 +62,7 @@ function Login() {
 
           <div className="text-center">
             <button className="btn btn-primary w-100">Login</button>
+            <button className="btn btn-warning mt-2 w-100">Register</button>
           </div>
 
         </form>
