@@ -6,9 +6,9 @@ import UserLayout from "./components/layout/UserLayout";
 import "./App.css"; // Global App-specific styles
 import Homepage from "./components/templates/Homepage";
 import OurServices from "./components/templates/OurServices";
-import AddEnquiry from "./components/pages/enquiry/AddEnquiry";
+
 import ViewEnquiry from "./components/pages/enquiry/ViewEnquiry";
-import AdddEnEnquiry from "./components/pages/enquiry/AdddEnEnquiry";
+import AddEnquiry from "./components/pages/enquiry/AddEnquiry";
 
 function App() {
   return (
@@ -23,10 +23,6 @@ function App() {
         {/* Enquiry Routes */}
         <Route path="/visitor/enquiry" element={<AddEnquiry />} />
         <Route path="/visitor/enquiry/view" element={<ViewEnquiry />} />
-       
-        
-
-   
       </Routes>
     </BrowserRouter>
   );
