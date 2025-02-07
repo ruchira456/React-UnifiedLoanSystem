@@ -1,0 +1,40 @@
+.sidenav-container {
+    background: url("/SideNav.jpg") no-repeat center center;
+    background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; 
+    padding-top: 20px; /* Adds spacing from the top */
+  }
+  
+  .sidenav-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e2ecf7; /* Bootstrap primary color */
+    color: rgb(44, 28, 28);
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 72%;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 10px rgba(245, 21, 21, 0.2);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .sidenav-button:hover {
+    background-color: #7894b5; /* Darker shade on hover */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  .sidenav-button i {
+    font-size: 1.2rem; /* Icon size */
+  }
+
+  .sidebar {
+    width: 350px;  /* Adjust this value as needed (default might be 250px or more) */
+  }

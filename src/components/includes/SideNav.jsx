@@ -5,6 +5,7 @@ import "../../styles/SideNav.css"
 //usertype->option
 // ADMIN-> Add Employee,View Employee,App Statastics
 // CRM->  Pending Enquiries , Send Feedback, Apply for Loan,View Pending Loan Application
+
 const basePath="/unified-loan-system/"
 const options={
        ADMIN:[
@@ -37,6 +38,7 @@ function SideNav({ userType }) {
             {option.label}
           </Link>
         ))}
+
     </div>
   );
 }

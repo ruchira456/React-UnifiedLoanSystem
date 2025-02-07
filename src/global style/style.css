@@ -20,3 +20,15 @@ body {
   height: 100vh;
   
 }
+
+.custom-heading {
+  color: grey; 
+  background-color: white; 
+  padding: 8px 16px;
+  display: inline-block; 
+  border-radius: 8px; 
+  box-shadow: 10px 10px 20px rgba(21, 21, 148, 0.6); 
+  font-size: 20px; 
+  font-weight: bold; 
+}
+

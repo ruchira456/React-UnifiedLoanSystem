@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react'
 import { useForm } from 'react-hook-form';
 
@@ -16,7 +17,7 @@ function AddEmployee() {
       formData.append('pan-image',employeePanCard);
       formData.append('prof-image',employeeImage);
 
-      axios.post('http://localhost:7088/employee_details/save_employee',formData).then(
+      axios.post('http://localhost:9095/employee_details/save_employee',formData).then(
           res=>{
               if(res.status===201)
               { 
